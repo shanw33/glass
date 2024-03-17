@@ -1,0 +1,354 @@
+.banner {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    position: relative;
+    @include pad {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true');
+        height: 80vh;
+    }
+    @include mobile {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true');
+        height: 68vh;
+    }
+}
+.banner-group {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-90%);
+    .banner-subtitle {
+        font-size: $font-size-md;
+        color: $primarydark-color;
+        line-height: 1.5;
+    }
+    .banner-title {
+        font-size: $font-size-bg;
+        color: $primarydark-color;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .btn {
+        font-size: $font-size-sm;
+        color: $w-color;
+        background-color: $primary-color;
+        padding: 6px 12px;
+        line-height: 1.5;
+    }
+    a {
+        color: inherit;
+    }
+    @include mobile {
+        .banner-subtitle {
+            font-size: $font-size-text;
+        }
+        .banner-title {
+            font-size: $font-size-body;
+        }
+    }
+}
+.section-title {
+    text-align: center;
+    color: $primarydark-color;
+    font-size: $font-size-title;
+    font-weight: 700;
+    margin-bottom: 48px;
+    @include mobile {
+        font-size: $font-size-body;
+        margin-bottom: 32px;
+    }
+}
+.point {
+    background-color: $primarytint-color;
+    .point-group {
+        padding: 80px 0;
+        @include mobile {
+            padding: 40px 0;
+        }
+    }
+    .card-group {
+        display: flex;
+        @include pad {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            padding: 0 36px;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+        .material-symbols-outlined {
+            display: inline-block;
+            width: 84px;
+            height: 84px;
+            font-size: 4rem;
+            color: $primarydark-color;
+        }
+        .content {
+            width: 25%;
+            text-align: center;
+            line-height: 1.5;
+            @include pad {
+                width: 48%;
+            }
+            @include mobile {
+                width: 100%;
+                padding: 0 14px;
+                margin-bottom: 36px;
+            }
+            .title {
+                font-size: $font-size-body;
+                font-weight: 700;
+                color: $primarydark-color;
+            }
+            .text {
+                font-size: $font-size-text;
+                @include pad {
+                }
+            }
+        }
+        .content + .content {
+            margin-left: 24px;
+            @include pad {
+                margin-left: 0;
+            }
+            @include mobile {
+                margin-left: 0;
+            }
+        }
+    }
+}
+.set {
+    padding: 80px 0;
+    @include mobile {
+        padding: 40px 14px;
+    }
+    .set-group {
+        display: flex;
+        @include pad {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    .set-conent {
+        @include pad {
+            width: 50%;
+            margin-bottom: 24px;
+        }
+        @include mobile {
+            margin-bottom: 24px;
+        }
+        .set-photo {
+            padding-bottom: 8px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .title {
+            text-align: center;
+            font-size: $font-size-title;
+            color: $primary-color;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+    .set-conent + .set-conent {
+        padding-left: 24px;
+        @include mobile {
+            padding-left: 0;
+        }
+    }
+}
+.joint {
+    padding: 80px 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include mobile {
+        padding: 40px 14px;
+
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+    }
+    .joint-group {
+        display: flex;
+        @include pad {
+            flex-direction: column;
+            padding: 0 36px;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+        .joint-conent {
+            @include pad {
+                padding-bottom: 24px;
+            }
+            @include mobile {
+                margin-bottom: 24px;
+            }
+        }
+        .joint-photo {
+            @include mobile {
+                display: none;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .joint-photo-mobile {
+            display: none;
+            @include mobile {
+                display: block;
+                img {
+                    display: block;
+                }
+            }
+        }
+        .joint-title {
+            padding: 8px 0;
+            display: inline-block;
+            font-style: italic;
+            font-weight: 700;
+            color: $primary-color;
+            font-size: $font-size-title;
+            background: $w-color;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.customer {
+    padding: 80px 0;
+    @include pad {
+        padding: 40px 36px;
+    }
+    @include mobile {
+        padding: 40px 14px;
+    }
+    .customer-group {
+        display: flex;
+        gap: 24px;
+        @include pad {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    .customer-conent {
+        background: $w-color;
+        box-shadow: 0px 2px 6px #00000029;
+        @include pad {
+            width: 100%;
+        }
+        @include mobile {
+            margin-bottom: 16px;
+        }
+        img {
+            @include pad {
+                width: 100%;
+            }
+        }
+    }
+    .customer-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+        line-height: 1.5;
+        .title,
+        .text {
+            font-size: $font-size-text;
+        }
+        .title {
+            padding-bottom: 8px;
+        }
+        .text {
+            padding-bottom: 48px;
+        }
+        .date {
+            font-size: $font-size-tiny;
+            color: $gray-color;
+        }
+    }
+}
+.contact {
+    padding: 80px 0;
+    background-color: $primarytint-color;
+    @include mobile {
+        padding: 40px 14px;
+    }
+    .contact-text {
+        font-size: $font-size-sm;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+    .question {
+        width: 49%;
+        margin: 0 auto;
+        @include pad {
+            width: 80%;
+        }
+        @include mobile {
+            width: 100%;
+            padding-bottom: 0;
+        }
+    }
+    .question-title {
+        font-size: $font-size-text;
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+    .question-content {
+        width: 100%;
+        padding: 6px 12px;
+        font-size: $font-size-text;
+        margin-bottom: 16px;
+        background: rgba(255, 255, 2255, 0);
+        border: 1px solid $bk-color;
+    }
+    input::placeholder {
+        opacity: 0.2;
+    }
+    textarea::placeholder {
+        opacity: 0.2;
+    }
+    .checkbox {
+        margin-right: 4px;
+        margin-bottom: 48px;
+        @include mobile {
+            margin-bottom: 0;
+        }
+    }
+    .checkbox-text {
+        font-size: $font-size-text;
+    }
+    .transmit {
+        display: block;
+        margin: 0 auto;
+        color: $w-color;
+        padding: 16px 0;
+        width: 70%;
+        background-color: $primary-color;
+        border: none;
+        font-size: $font-size-text;
+        @include mobile {
+            margin-top: 24px;
+            width: 100%;
+        }
+    }
+}

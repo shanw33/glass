@@ -1,0 +1,59 @@
+.question {
+    padding-bottom: 48px;
+    @include pad {
+        padding-bottom: 56px;
+    }
+    @include mobile {
+        padding-bottom: 40px;
+    }
+    .inpage-title-2 {
+        font-size: $font-size-title;
+        font-weight: 900;
+
+        margin-top: 96px;
+        margin-bottom: 32px;
+        @include pad {
+            padding: 0 36px;
+        }
+        @include mobile {
+            padding: 0 14px;
+        }
+        span {
+            border-left: 8px solid $primary-default-color;
+            margin-right: 16px;
+        }
+    }
+    .question-point {
+        font-size: $font-size-body;
+        font-weight: 900;
+        margin-bottom: 24px;
+        @include pad {
+            padding: 0 36px;
+        }
+        @include mobile {
+            padding: 0 14px;
+        }
+    }
+    .question-group {
+        width: 66%;
+        @include pad {
+            width: 100%;
+            padding: 0 36px;
+        }
+        @include mobile {
+            padding: 0 14px;
+        }
+        .question-content {
+            line-height: 1.5;
+            margin-bottom: 32px;
+            .question-title {
+                font-size: $font-size-sm;
+                font-weight: 900;
+                margin-bottom: 8px;
+            }
+            .question-text {
+                font-size: $font-size-text;
+            }
+        }
+    }
+}

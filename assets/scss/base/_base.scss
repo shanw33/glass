@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+// color
+$primary-color: #aa0601;
+$primarydark-color: #650300;
+$primarytint-color: #fbf2f2;
+$primary-default-color: #9f1213;
+
+$gray-color: #707070;
+$gray-color-2: #dcdcdc;
+$gray-color-3: #555555;
+$gray-color-4: #f2f2f2;
+$gray-color-5: #495057;
+$gray-color-6: #ced4da;
+$gray-color-7: #00000020;
+
+$w-color: #ffffff;
+$bk-color: #000000;
+$product-color-1: #5f3e2d;
+$product-color-2: #b75929;
+
+// font-size
+$font-size-tiny: 14px;
+$font-size-text: 16px;
+$font-size-page: 18px;
+$font-size-sm: 20px;
+$font-size-body: 24px;
+$font-size-subtitle: 32px;
+$font-size-md: 36px;
+$font-size-inpage-title: 42px;
+$font-size-title: 48px;
+$font-size-bg: 64px;

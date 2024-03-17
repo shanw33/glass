@@ -1,0 +1,201 @@
+.blog-data {
+    line-height: 1.5;
+    padding-bottom: 80px;
+    @include mobile {
+        padding-bottom: 24px;
+    }
+    .nav {
+        background-color: $primarydark-color;
+        margin-bottom: 24px;
+        @include mobile {
+            margin-bottom: 16px;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 48px;
+            @include mobile {
+                font-size: $font-size-text;
+
+                gap: 24px;
+            }
+        }
+
+        .nav-group {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 0;
+            color: $w-color;
+            @include mobile {
+                justify-content: center;
+            }
+            .search {
+                @include mobile {
+                    display: none;
+                }
+            }
+            a {
+                color: inherit;
+            }
+        }
+    }
+    .breadcrumb {
+        display: flex;
+        margin-bottom: 8px;
+        @include pad {
+            padding: 0 36px;
+        }
+        @include mobile {
+            padding: 0 14px;
+        }
+        .breadcrumb-item {
+            font-size: $font-size-text;
+            color: $bk-color;
+            a {
+                color: inherit;
+            }
+        }
+        .breadcrumb-item.active {
+            color: $primary-color;
+        }
+    }
+    .tag-group {
+        font-weight: 900;
+        @include pad {
+            padding: 0 36px;
+        }
+        @include mobile {
+            padding: 0 14px;
+            font-size: $font-size-text;
+        }
+        .tag {
+            color: $primary-color;
+        }
+        .tag + .tag {
+            padding-left: 15px;
+        }
+    }
+    .data-title {
+        font-size: $font-size-title;
+        @include pad {
+            font-size: $font-size-title;
+        }
+        @include mobile {
+            font-size: $font-size-body;
+        }
+    }
+    .data-subtitle {
+        font-size: $font-size-body;
+        margin-bottom: 16px;
+        font-weight: 700;
+        @include mobile {
+            font-size: $font-size-text;
+        }
+    }
+    .data-group {
+        .data-content {
+            margin-bottom: 40px;
+            @include mobile {
+                margin-bottom: 16px;
+            }
+            .data-photo {
+                margin-bottom: 8px;
+            }
+            .data-text {
+                font-size: $font-size-text;
+                color: $gray-color-3;
+            }
+        }
+    }
+    .share-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $gray-color;
+        margin-bottom: 24px;
+        @include mobile {
+            display: none;
+        }
+        .share-title {
+            font-weight: 900;
+            margin-right: 16px;
+        }
+        .share-link {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 16px;
+        }
+    }
+
+    .page-link-group {
+        color: $bk-color;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include mobile {
+            display: none;
+        }
+        .page-link {
+            font-size: $font-size-text;
+            a {
+                color: inherit;
+            }
+        }
+        .material-symbols-outlined {
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: text-top;
+            padding-top: 2px;
+        }
+    }
+    .content-right {
+        color: $primary-color;
+        width: 20%;
+        @include pad {
+            display: block;
+            width: 30%;
+        }
+        @include mobile {
+            display: none;
+        }
+        .tag-title {
+            display: inline-block;
+            font-size: $font-size-subtitle;
+            font-weight: 900;
+            .material-symbols-outlined {
+                vertical-align: text-top;
+            }
+        }
+        .tag-link {
+            display: inline-block;
+            a {
+                color: inherit;
+                display: inline-block;
+            }
+        }
+        .tag-link + .tag-link {
+            margin-right: 24px;
+        }
+    }
+    .content-all {
+        display: flex;
+        @include pad {
+            padding: 0 36px;
+        }
+        @include mobile {
+            padding: 0 14px;
+            flex-direction: column;
+        }
+    }
+    .content-left {
+        width: 60%;
+        margin-right: 24px;
+        @include pad {
+            width: 60%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+}

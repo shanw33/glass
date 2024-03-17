@@ -1,0 +1,19 @@
+@import './base/base.scss';
+@import './utils/mixin.scss';
+
+@import './base/reset.scss';
+@import './base/fontstyle.scss';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './pages/index.scss';
+@import './pages/optocal.scss';
+@import './pages/sunglasses.scss';
+@import './pages/store.scss';
+@import './pages/store-data.scss';
+@import './pages/question.scss';
+@import './pages/blog.scss';
+@import './pages/blog-data.scss';
+
+@import './utils/helpers.scss';
